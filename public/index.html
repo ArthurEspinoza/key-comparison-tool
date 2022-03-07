@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>KeyComparison</title>
+</head>
+<body>
+    <div class="contenedor">
+        <section>
+            <p class="fs-3 font-weight-semi-bold text-center">Keys Comparison</p>
+            <p class="text-center">Select the wished language and click on the comparison button</p>
+        </section>
+        <section class="row mt-5">
+            <div class="col-8" id="select-container"></div>
+            <div class="col-4 d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary" id="compare">Comparar Keys</button>
+            </div>
+        </section>
+        <section id="keys-list" class="mt-3"></section>
+        <section id="results-container" class="hidden mt-3">
+            <p class="fs-6 text-center font-weight-bold">Paste the translate result and click on the button</p>
+            <button class="btn btn-primary d-block mx-auto" id="generate">Generate missing JSON</button>
+            <div class="my-3 alert alert-danger hidden" role="danger" id="alertMsg"></div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <textarea name="missing-keys" id="missing-keys" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="col-6">
+                    <textarea name="translate-keys" id="translate-keys" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+        </section>
+        <section id="json-container" class="hidden mt-3">
+            <p class="fs-5 text-center">
+                Copy the result without the first and last brackets or
+                <span class="download-link" id="download-link">click here</span> to download it.
+            </p>
+            <textarea name="json-results" id="json-results" rows="10" class="form-control"></textarea>
+            <div id="json-file"></div>
+        </section>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

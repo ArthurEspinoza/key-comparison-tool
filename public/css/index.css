@@ -1,0 +1,26 @@
+.contenedor {
+    width: 50%;
+    margin-inline:auto;
+    padding: 1em;
+}
+.list-group-item:hover {
+    background-color: rgba(108, 117, 125, .5);
+}
+.show {
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+textarea {
+    width: 100%;
+}
+.download-link {
+    color: rgba(55, 173, 247, 1);
+    font-weight: 300;
+}
+.download-link:hover {
+    color: rgba(55, 173, 247, .6);
+    font-weight: 300;
+    cursor: pointer;
+}
