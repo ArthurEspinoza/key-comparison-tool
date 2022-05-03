@@ -12,3 +12,5 @@ public/data/*
 *.njsproj
 *.sln
 *.sw?
+# Data
+dataLabels

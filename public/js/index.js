@@ -88,8 +88,15 @@
             textArea.innerHTML = "";
         }
         const keyList = Object.keys(otherLanguageJSON);
-        for(let i = 0, length = keys.length; i < length; i++) {
-            textArea.value += `${otherLanguageJSON[keyList[keyList.length-1]].index + (i+1)}.- ${baseJSON[keys[i]].value}\n`
+        console.log(keys);
+        if(keyList.length !== 0){
+            for(let i = 0, length = keys.length; i < length; i++) {
+                textArea.value += `${otherLanguageJSON[keyList[keyList.length-1]].index + (i+1)}.- ${baseJSON[keys[i]].value}\n`
+            }
+        }else{
+            for(let i = 0, length = keys.length; i < length; i++) {
+                textArea.value += `${baseJSON[keys[i]].index}.- ${baseJSON[keys[i]].value}\n`
+            }
         }
     };
 
